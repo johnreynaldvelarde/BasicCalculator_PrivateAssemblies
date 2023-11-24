@@ -48,6 +48,7 @@
             this.txtUpper.Size = new System.Drawing.Size(265, 43);
             this.txtUpper.TabIndex = 0;
             this.txtUpper.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtUpper.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUpper_KeyPress);
             // 
             // txtDown
             // 
@@ -58,6 +59,7 @@
             this.txtDown.Size = new System.Drawing.Size(265, 43);
             this.txtDown.TabIndex = 1;
             this.txtDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDown.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDown_KeyPress);
             // 
             // cbOperator
             // 

@@ -65,5 +65,21 @@ namespace BasicCalculator
                 }
             }
         }
+
+        private void txtUpper_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '\b' && e.KeyChar != '\u007F')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtDown_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '\b' && e.KeyChar != '\u007F')
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
